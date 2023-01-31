@@ -7,6 +7,7 @@ def app():
                   + '\t-> ')
     if int(start) == 1:
         remove_duplicate_and_empty_lines()
+        app()
 
     elif int(start) == 2:
         pass

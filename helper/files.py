@@ -4,7 +4,7 @@ def read_file(path):
     return lines
 
 
-def save_list_in_file(list, file_path):
+def save_list_in_file(file_list, file_path):
     with open(file_path, "w") as f:
-        f.writelines(list)
+        f.writelines(file_list)
         print(f'File saved in: {file_path}')
