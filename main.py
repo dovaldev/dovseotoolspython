@@ -1,4 +1,6 @@
-from tools.duplicates import remove_duplicate_and_empty_lines, remove_duplicate_empty_lines_and_similarity, get_unique_lines_with_similitary
+from tools.duplicates import remove_duplicate_and_empty_lines, remove_duplicate_empty_lines_and_similarity, \
+    get_unique_lines_with_similitary
+
 
 def app():
     start = input('=========\nLimpiar contenido en archivos txt AI\t'
