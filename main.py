@@ -3,9 +3,10 @@ from tools.duplicates import remove_duplicate_and_empty_lines, remove_duplicate_
 def app():
     start = input('=========\nLimpiar contenido en archivos txt AI\t'
                   + '\n¿Que quieres hacer?\n'
-                  + '\t1 - Quitar líneas en blanco y duplicadas\n'
-                  + '\t2 - Quitar líneas en blanco y duplicadas y eliminar similitudes\n'
-                  + '\t3 - Obetener los elementos que no se repiten\n'
+                  + '\t1 - Quitar líneas en blanco y duplicadas (se guardará en: list_result-option-1.txt)\n'
+                  + '\t2 - Quitar líneas en blanco y duplicadas y eliminar similitudes (se guardará en: '
+                    'list_result-option-2.txt)\n'
+                  + '\t3 - Obtener los elementos que no se repiten (se guardará en: list_result-option-3.txt)\n'
                   + '\t-> ')
     if int(start) == 1:
         remove_duplicate_and_empty_lines()

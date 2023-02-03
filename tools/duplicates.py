@@ -15,7 +15,7 @@ def remove_duplicate_and_empty_lines():
     file_list1 = sorted(file_list1)
 
     # save the new list without empty lines in the new file, storage result
-    save_list_in_file(file_list1, 'result/list_result.txt')
+    save_list_in_file(file_list1, 'result/list_result-option-1.txt')
 
     return file_list1
 
@@ -35,7 +35,7 @@ def remove_duplicate_empty_lines_and_similarity():
     file_list1 = remove_similarity_lines(file_list1)
 
     # save the new list without empty lines in the new file, storage result
-    save_list_in_file(file_list1, 'result/list_result.txt')
+    save_list_in_file(file_list1, 'result/list_result-option-2.txt')
 
     return file_list1
 
@@ -54,4 +54,4 @@ def get_unique_lines_with_similitary():
         file_list2 = read_file('files/list_2.txt')
 
         not_duplicated_list = get_not_duplicates_lines(file_list1, file_list2, similitary)
-        save_list_in_file(not_duplicated_list, 'result/not_duplicated_list.txt')
+        save_list_in_file(not_duplicated_list, 'result/list_result-option-3.txt')
